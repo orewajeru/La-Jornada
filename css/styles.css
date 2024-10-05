@@ -12,55 +12,77 @@
 
 /* SECTION OFERTAS */
 .main__home-ofertas {
-  height: 50rem;
+  margin: 12rem 36rem;
 }
 
-.ofertas__cards {
-  display: flex;
-  justify-content: space-around;
-  padding: 3rem 36rem;
-  text-align: center;
+.ofertas-cards {
+  margin: 10rem 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+  gap: 2.5rem;
 }
 
-.ofertas__cards img {
-  width: 50rem;
+.card-bg {
+  width: 58rem;
   height: 30rem;
-  border-radius: 1.6rem;
-  box-shadow: 1px 1px 20px var(--black);
+  border-radius: 4rem;
 }
-.card-texts {
-  border-radius: 1.6rem;
-  height: 30rem;
-  width: 50rem;
-  position: absolute;
-  top: 110.1rem;
-  color: white;
+
+.card-bg.first {
+  background: url(/img/home/tokyo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card-bg.second {
+  background: url(/img/home/san-andreas.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card-content-bg {
   background: rgba(0, 0, 0, 0.5);
+  width: 58rem;
+  height: 30rem;
+  border-radius: 4rem;
 }
 
-.card__texts-primary,
-.card__texts-secondary,
-.card__texts-price,
-.card__texts-details {
+.card-content {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 4rem;
+}
+
+.card-texts {
   margin: 0;
 }
 
-.card__texts-primary {
+.card-texts.first {
   font-size: 2rem;
-  font-weight: 200;
-  margin: 2.4rem;
+  font-weight: 320;
+  text-transform: uppercase;
+  letter-spacing: 3px;
 }
 
-.card__texts-secondary,
-.card__texts-price {
-  font-size: 4rem;
-  font-weight: 600;
-  margin: 1.5rem;
-}
-.card__texts-price {
-  margin-bottom: 5rem;
+.card-texts.second {
+  font-size: 4.8rem;
+  font-weight: 700;
+  margin-top: 0.8rem;
 }
 
+.card-texts.price {
+  font-size: 3.5rem;
+  font-weight: 500;
+  margin-top: 2.4rem;
+}
+
+.card-texts.details {
+  margin: 2.4rem auto;
+  width: 50%;
+}
 /* SECTION CATEGORIAS */
 
 .main__home-categorias {
@@ -452,19 +474,4 @@ figure {
 /* MEDIA QUERIES */
 
 @media (width >= 600px) and (width <= 1200px) {
-  .main__home-categorias,
-  .main__home-destinos,
-  .main__home-ofertas,
-  .main__home-opiniones {
-    margin: 20rem 0;
-  }
-
-  .ofertas__cards,
-  .card-texts {
-    display: flex;
-    flex-direction: column;
-  }
-  .card-texts {
-    display: flex;
-  }
 }
