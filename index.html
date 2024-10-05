@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/global.css" />
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>La Jornada</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html" class="logo-link" id="logo">
+          <img
+            src="./img/home/logo.png"
+            alt="Logo de Proyecto Jornada"
+            class="nav__logo"
+          />
+        </a>
+        <div class="nav__display">
+          <a class="a__link" href="blog.html">Blog</a>
+          <a class="a__link" href="paquetesviaje.html">Paquetes de Viajes</a>
+          <a class="a__link" href="contacto.html">Contacto</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="main__home-intro">
+        <a class="go-up-button" id="buttonUp" onclick="clickToUp()"
+          ><img src="./img/flecha.png" alt="" srcset=""
+        /></a>
+
+        <div class="main__section--intro-display">
+          <img
+            src="./img/home/maldivas.png"
+            alt="Hombre en una canoa en Maldivas"
+            srcset=""
+            class="banner home-header"
+          />
+          <p class="section__intro-p">
+            Somos una agencia apasionada por crear viajes inolvidables. Desde el
+            destino hasta la selección de actividades, nos encargamos de todos
+            los detalles para que disfrutes al máximo cada momento de tus
+            jornada.
+          </p>
+        </div>
+      </section>
+
+      <section class="main__home-ofertas">
+        <div class="titles-container">
+          <h2 class="titles ofertas__h2-title">Ofertas Semanales</h2>
+        </div>
+        <div class="ofertas__cards">
+          <div class="card-primary">
+            <img
+              src="./img/home/tokyo.png"
+              alt="Ciudad de Japón de noche"
+              class="card__img-bg"
+            />
+            <div class="card-texts">
+              <p class="card__texts-primary">Hotel+Aéreo</p>
+              <p class="card__texts-secondary">Japón</p>
+              <p class="card__texts-price">$4000</p>
+              <a href="" class="button card__texts-details">Más Detalles</a>
+            </div>
+          </div>
+
+          <div class="card-second">
+            <img
+              src="./img/home/san-andreas.png"
+              alt="Ciudad de San Andreas"
+              class="card__img-bg"
+            />
+            <div class="card-texts">
+              <p class="card__texts-primary">Hotel+Aéreo</p>
+              <p class="card__texts-secondary">San Andreas</p>
+              <p class="card__texts-price">$3000</p>
+              <a href="" class="button card__texts-details">Más Detalles</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="main__home-categorias">
+        <div class="titles-container">
+          <h2 class="titles categorias__h2-title">Busca por Categoría</h2>
+        </div>
+        <div class="categorias__display">
+          <div class="categorias__cards">
+            <img
+              src="./img/home/paquetes-nacionales icon.svg"
+              alt="Icono de paquetes nacionales"
+              srcset=""
+              class="categorias__icon-card"
+            />
+            <p class="categorias__cards-text">Paquetes Nacionales</p>
+          </div>
+
+          <div class="categorias__cards">
+            <img
+              src="./img/home/paquetes-internacionales icon.svg"
+              alt="Icono de paquetes internacionales"
+              srcset=""
+              class="categorias__icon-card"
+            />
+            <p class="categorias__cards-text">Paquetes Internacionales</p>
+          </div>
+
+          <div class="categorias__cards">
+            <img
+              src="./img/home/transporte icon.svg"
+              alt="Icono de transporte"
+              srcset=""
+              class="categorias__icon-card"
+            />
+            <p class="categorias__cards-text">Transporte</p>
+          </div>
+
+          <div class="categorias__cards">
+            <img
+              src="./img/home/seguro de viaje icon.svg"
+              alt="Icono de seguro de viaje"
+              srcset=""
+              class="categorias__icon-card"
+            />
+            <p class="categorias__cards-text">Seguro de Viaje</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="main__home-destinos">
+        <div class="titles-container">
+          <h2 class="titles destinos__h2-title">Destinos Populares</h2>
+        </div>
+
+        <div class="destinos__cards-display">
+          <article class="destinos__cards">
+            <div class="texts-bg">
+              <img
+                src="./img/home/tokyo.png"
+                alt="Ciudad de Tokyo"
+                srcset=""
+                class="destinos__cards-img"
+              />
+              <div class="destinos-texts">
+                <p class="destinos__cards-title">Tokyo</p>
+                <p class="destinos__cards-p">
+                  Tokyo es una ciudad vibrante y cosmopolita, con sus templos
+                  históricos, museos de arte moderno y rascacielos icónicos. No
+                  pierdas la oportunidad de sumergirte en su fascinante
+                  atmósfera.
+                </p>
+                <a href="" class="button destinos__cards-button"
+                  >Ver Detalles</a
+                >
+              </div>
+            </div>
+          </article>
+
+          <article class="destinos__cards">
+            <div class="texts-bg">
+              <img
+                src="./img/home/osaka@2x.png"
+                alt="Ciudad de Osaka"
+                srcset=""
+                class="destinos__cards-img"
+              />
+              <div class="destinos-texts">
+                <p class="destinos__cards-title">Osaka</p>
+                <p class="destinos__cards-p">
+                  Osaka es una ciudad animada y moderna en Japón. La ciudad es
+                  famosa por su deliciosa gastronomía y por ser un excelente
+                  punto de partida para explorar otras ciudades japonesas
+                  cercanas.
+                </p>
+                <a href="./" class="button destinos__cards-button"
+                  >Ver Detalles</a
+                >
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="main__home-condiciones">
+        <div class="titles-container">
+          <h2 class="titles condiciones-title">Condiciones de Pago</h2>
+        </div>
+        <div class="condiciones__display">
+          <div class="condiciones__texts">
+            <h3 class="condiciones__texts-title">
+              "¡Pago a plazos de hasta 12 cuotas"
+            </h3>
+            <p class="condiciones__texts-p">
+              Viaja pagando en hasta 12 cuotas con tarjeta, al contado en
+              crédito con un descuento del 5%
+            </p>
+            <a href="" class="button condiciones__texts-button">Ver Detalles</a>
+          </div>
+
+          <div class="condiciones__photos">
+            <div class="condiciones__group-photos">
+              <div class="photos-container photo-first">
+                <img
+              src="./img/home/montaje (3).png"
+              alt="Foto de maleta llena de cosas personales"
+              class="condiciones__img"
+            />
+              </div>
+
+          <div class="photos-container photo-second">
+            <img
+              src="./img/home/montaje (2).png"
+              alt="Foto de pasaportes"
+              class="condiciones__img"
+            />
+            </div>
+        </div>
+          <div class="photos-container photo-third">
+            <img
+              src="./img/home/montaje (1).png"
+              alt="Foto de dos chicas posando"
+              class="condiciones__img"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="main__home-opiniones">
+        <div class="titles-container">
+          <h2 class="titles opiniones__h2-title">Reseñas</h2>
+        </div>
+
+        <div class="opiniones__display">
+          <div class="opiniones__cards">
+            <img src="./img/comillas.png" alt="" srcset="" class="opiniones-icon">
+            <p class="opiniones__text">
+              La Jornada ha sido una de las mejores agencias de viajes que he
+              experimentado. El servicio al cliente fue excepcional, y todo el
+              equipo fue muy atento y servicial.
+            </p>
+            <div class="opiniones-group">
+              <img
+                src="./img/home/ellipse-1@2x.png"
+                alt="Foto de una chica"
+                srcset=""
+                class="opiniones__avatars"
+              />
+              <div class="opiniones-group-texts">
+                <p class="opiniones__span-name">Ana Lopés</p>
+                <img
+                  src="./img/home/estrellas.png"
+                  alt="Puntuación"
+                  srcset=""
+                  class="opiniones__img-rate"
+                />
+              </div>
+            </div>
+          </div>
+          
+          <div class="opiniones__cards">
+            <img src="./img/comillas.png" alt="" srcset="" class="opiniones-icon">
+            <p class="opiniones__text">
+              Te recomiendo firmemente la agencia de viajes Jornada. Ofrecen un servicio personalizado y de alta calidad que superó mis expectativas en mi último viaje.
+            </p>
+            <div class="opiniones-group">
+              <img
+                src="./img/home/avatar-amari@2x.png"
+                alt="Foto de un chico"
+                srcset=""
+                class="opiniones__avatars"
+              />
+              <div class="opiniones-group-texts">
+                <p class="opiniones__span-name">Amari Salin</p>
+                <img
+                  src="./img/home/estrellas.png"
+                  alt="Puntuación"
+                  srcset=""
+                  class="opiniones__img-rate"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="opiniones__cards">
+            <img src="./img/comillas.png" alt="" srcset="" class="opiniones-icon">
+            <p class="opiniones__text">
+              ¡Mi viaje con La Jornada fue increíble! Te la recomiendo mucho si buscas una experiencia emocionante y personalizada.
+            </p>
+            <div class="opiniones-group">
+              <img
+                src="./img/home/avatar-lauro@2x.png"
+                alt="Foto de un chico"
+                srcset=""
+                class="opiniones__avatars"
+              />
+              <div class="opiniones-group-texts">
+                <p class="opiniones__span-name">Lauro B. Matos</p>
+                <img
+                  src="./img/home/estrellas.png"
+                  alt="Puntuación"
+                  srcset=""
+                  class="opiniones__img-rate"
+                />
+              </div>
+            </div>
+          </div>
+
+         
+        </div>
+      </section>
+
+      <section class="banner-footer">
+        <img
+          src="./img/home/pre-footer-image.png"
+          alt="Foto de un pueblo con montañas"
+          srcset=""
+          class="banner home-footer"
+        />
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-info">
+        <div class="info-p-group">
+          <p class="footer__info-p">
+            Horario de atención:
+            <span class="info-text">08h - 20h (Lunes a Sábado)</span>
+          </p>
+          <p class="footer__info-p">
+            Desarrollado para <span class="info-text">Alura Latam.</span> Proyecto
+            fictício sin fines comerciales.
+          </p>
+        </div>
+
+      <div class="vertical-line"></div>
+
+      <div class="footer-social">
+        <p class="footer__social-text">Siguenos en nuestras redes sociales</p>
+        <div class="footer__social-display">
+          <div class="social-content">
+            <a href="" class="footer__a">
+              <img
+                src="./img/home/whatsapp.png"
+                alt="Whatsapp logo"
+                srcset=""
+                class="social-icon"
+              />
+            </a>
+          </div>
+  <div class="social-content">
+            <a href="" class="footer__a">
+              <img
+                src="./img/home/instagram.png"
+                alt="Instagram logo"
+                srcset=""
+                class="social-icon"
+              />
+            </a>
+  </div>
+  <div class="social-content">
+            <a href="" class="footer__a">
+              <img
+                src="./img/home/twitter.png"
+                alt="Twitter logo"
+                srcset=""
+                class="social-icon"
+              />
+            </a>
+          </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>
