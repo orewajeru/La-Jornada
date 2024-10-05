@@ -37,14 +37,7 @@
         <a class="go-up-button" id="buttonUp" onclick="clickToUp()"
           ><img src="./img/flecha.png" alt="" srcset=""
         /></a>
-
-        <div class="main__section--intro-display">
-          <img
-            src="./img/home/maldivas.png"
-            alt="Hombre en una canoa en Maldivas"
-            srcset=""
-            class="banner home-header"
-          />
+      <div class="banner home-header-banner"></div>
           <p class="section__intro-p">
             Somos una agencia apasionada por crear viajes inolvidables. Desde el
             destino hasta la selección de actividades, nos encargamos de todos
@@ -142,39 +135,27 @@
         </div>
 
         <div class="destinos__cards-display">
-          <article class="destinos__cards">
-            <div class="texts-bg">
-              <img
-                src="./img/home/tokyo.png"
-                alt="Ciudad de Tokyo"
-                srcset=""
-                class="destinos__cards-img"
-              />
-              <div class="destinos-texts">
-                <p class="destinos__cards-title">Tokyo</p>
-                <p class="destinos__cards-p">
-                  Tokyo es una ciudad vibrante y cosmopolita, con sus templos
-                  históricos, museos de arte moderno y rascacielos icónicos. No
-                  pierdas la oportunidad de sumergirte en su fascinante
-                  atmósfera.
-                </p>
-                <a href="" class="button destinos__cards-button"
-                  >Ver Detalles</a
-                >
+          <article class="texts-bg first">
+              <div class="destinos-texts-bg">
+                <div class="destinos-content">
+                  <h3 class="destinos__cards-title">Tokyo</h3>
+                  <p class="destinos__cards-p">
+                    Tokyo es una ciudad vibrante y cosmopolita, con sus templos
+                    históricos, museos de arte moderno y rascacielos icónicos. No
+                    pierdas la oportunidad de sumergirte en su fascinante
+                    atmósfera.
+                  </p>
+                  <a href="" class="button destinos__cards-button"
+                    >Ver Detalles</a
+                  >
+                </div>
               </div>
-            </div>
           </article>
 
-          <article class="destinos__cards">
-            <div class="texts-bg">
-              <img
-                src="./img/home/osaka@2x.png"
-                alt="Ciudad de Osaka"
-                srcset=""
-                class="destinos__cards-img"
-              />
-              <div class="destinos-texts">
-                <p class="destinos__cards-title">Osaka</p>
+          <article class="texts-bg second">
+            <div class="destinos-texts-bg">
+              <div class="destinos-content">
+                <h3 class="destinos__cards-title">Osaka</h3>
                 <p class="destinos__cards-p">
                   Osaka es una ciudad animada y moderna en Japón. La ciudad es
                   famosa por su deliciosa gastronomía y por ser un excelente
@@ -235,7 +216,7 @@
       </section>
 
       <section class="main__home-opiniones">
-        <div class="titles-contai ner">
+        <div class="titles-container">
           <h2 class="titles opiniones__h2-title">Reseñas</h2>
         </div>
 
@@ -252,7 +233,7 @@
                 src="./img/home/ellipse-1@2x.png"
                 alt="Foto de una chica"
                 srcset=""
-                class="opiniones__avatars"
+                class="opiniones__avatar"
               />
               <div class="opiniones-group-texts">
                 <p class="opiniones__span-name">Ana Lopés</p>
@@ -276,7 +257,7 @@
                 src="./img/home/avatar-amari@2x.png"
                 alt="Foto de un chico"
                 srcset=""
-                class="opiniones__avatars"
+                class="opiniones__avatar"
               />
               <div class="opiniones-group-texts">
                 <p class="opiniones__span-name">Amari Salin</p>
@@ -300,7 +281,7 @@
                 src="./img/home/avatar-lauro@2x.png"
                 alt="Foto de un chico"
                 srcset=""
-                class="opiniones__avatars"
+                class="opiniones__avatar"
               />
               <div class="opiniones-group-texts">
                 <p class="opiniones__span-name">Lauro B. Matos</p>
@@ -318,14 +299,7 @@
         </div>
       </section>
 
-      <section class="banner-footer">
-        <img
-          src="./img/home/pre-footer-image.png"
-          alt="Foto de un pueblo con montañas"
-          srcset=""
-          class="banner home-footer"
-        />
-      </section>
+      <div class="banner home-footer-banner"></div>
     </main>
 
     <footer>
@@ -347,7 +321,9 @@
         <p class="footer__social-text">Siguenos en nuestras redes sociales</p>
         <div class="footer__social-display">
           <div class="social-content">
+            <div class="content-display">
             <a href="" class="footer__a">
+              <span class="social-span">@Username</span>
               <img
                 src="./img/home/whatsapp.png"
                 alt="Whatsapp logo"
@@ -356,8 +332,10 @@
               />
             </a>
           </div>
-  <div class="social-content">
+          </div>
+          <div class="social-content">
             <a href="" class="footer__a">
+              <span class="social-span">@Username</span>
               <img
                 src="./img/home/instagram.png"
                 alt="Instagram logo"
@@ -365,9 +343,10 @@
                 class="social-icon"
               />
             </a>
-  </div>
-  <div class="social-content">
+            </div>
+          <div class="social-content">
             <a href="" class="footer__a">
+              <span class="social-span">@Username</span>
               <img
                 src="./img/home/twitter.png"
                 alt="Twitter logo"

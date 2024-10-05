@@ -33,16 +33,11 @@
     </header>
 
     <main>
+      <a class="go-up-button" id="buttonUp" onclick="clickToUp()"
+        ><img src="./img/flecha.png" alt="" srcset=""
+      /></a>
       <section class="blog-intro">
-        <a class="go-up-button" id="buttonUp" onclick="clickToUp()"
-          ><img src="./img/flecha.png" alt="" srcset=""
-        /></a>
-        <img
-          src="./img/blog/Banner Blog.png"
-          alt="Chica escribiendo en su diario"
-          srcset=""
-          class="banner blog-banner"
-        />
+        <div class="banner blog-header-banner"></div>
         <div class="intro-texts">
           <h1 class="intro-h1">Blog de La Jornada</h1>
           <p class="intro-p">
@@ -211,7 +206,6 @@
         </div>
       </section>
     </main>
-
     <footer>
       <div class="footer-info">
         <div class="info-p-group">
@@ -232,17 +226,21 @@
           <p class="footer__social-text">Siguenos en nuestras redes sociales</p>
           <div class="footer__social-display">
             <div class="social-content">
-              <a href="" class="footer__a">
-                <img
-                  src="./img/home/whatsapp.png"
-                  alt="Whatsapp logo"
-                  srcset=""
-                  class="social-icon"
-                />
-              </a>
+              <div class="content-display">
+                <a href="" class="footer__a">
+                  <span class="social-span">@Username</span>
+                  <img
+                    src="./img/home/whatsapp.png"
+                    alt="Whatsapp logo"
+                    srcset=""
+                    class="social-icon"
+                  />
+                </a>
+              </div>
             </div>
             <div class="social-content">
               <a href="" class="footer__a">
+                <span class="social-span">@Username</span>
                 <img
                   src="./img/home/instagram.png"
                   alt="Instagram logo"
@@ -253,6 +251,7 @@
             </div>
             <div class="social-content">
               <a href="" class="footer__a">
+                <span class="social-span">@Username</span>
                 <img
                   src="./img/home/twitter.png"
                   alt="Twitter logo"

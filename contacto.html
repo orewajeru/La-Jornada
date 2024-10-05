@@ -32,17 +32,11 @@
     </header>
 
     <main>
-      <section class="contacto-intro">
-        <a class="go-up-button" id="buttonUp" onclick="clickToUp()"
+      <a class="go-up-button" id="buttonUp" onclick="clickToUp()"
           ><img src="./img/flecha.png" alt="" srcset=""
         /></a>
-
-        <img
-          src="./img/contacto/Banner Contacto.png"
-          alt="2 personas con una tablet"
-          srcset=""
-          class="banner contacto-banner"
-        />
+      <section class="contacto-intro">
+        <div class="banner contacto-header-banner"></div>
         <div class="intro-texts">
           <h1 class="intro-h1">¡Ponte en contacto!</h1>
           <p class="intro-p">
@@ -140,14 +134,7 @@
           </form>
         </div>
       </section>
-      <section class="banner-footer">
-        <img
-          src="./img/contacto/Footer.png"
-          alt="Chica mirando el horizonte"
-          srcset=""
-          class="banner contact-footer"
-        />
-      </section>
+      <div class="banner contacto-footer-banner"></div>
     </main>
 
     <footer>
@@ -158,52 +145,55 @@
             <span class="info-text">08h - 20h (Lunes a Sábado)</span>
           </p>
           <p class="footer__info-p">
-            Desarrollado para
-            <span class="info-text">Alura Latam.</span> Proyecto fictício sin
-            fines comerciales.
+            Desarrollado para <span class="info-text">Alura Latam.</span> Proyecto
+            fictício sin fines comerciales.
           </p>
         </div>
 
-        <div class="vertical-line"></div>
+      <div class="vertical-line"></div>
 
-        <div class="footer-social">
-          <p class="footer__social-text">Siguenos en nuestras redes sociales</p>
-          <div class="footer__social-display">
-            <div class="social-content">
-              <a href="" class="footer__a">
-                <img
-                  src="./img/home/whatsapp.png"
-                  alt="Whatsapp logo"
-                  srcset=""
-                  class="social-icon"
-                />
-              </a>
+      <div class="footer-social">
+        <p class="footer__social-text">Siguenos en nuestras redes sociales</p>
+        <div class="footer__social-display">
+          <div class="social-content">
+            <div class="content-display">
+            <a href="" class="footer__a">
+              <span class="social-span">@Username</span>
+              <img
+                src="./img/home/whatsapp.png"
+                alt="Whatsapp logo"
+                srcset=""
+                class="social-icon"
+              />
+            </a>
+          </div>
+          </div>
+          <div class="social-content">
+            <a href="" class="footer__a">
+              <span class="social-span">@Username</span>
+              <img
+                src="./img/home/instagram.png"
+                alt="Instagram logo"
+                srcset=""
+                class="social-icon"
+              />
+            </a>
             </div>
-            <div class="social-content">
-              <a href="" class="footer__a">
-                <img
-                  src="./img/home/instagram.png"
-                  alt="Instagram logo"
-                  srcset=""
-                  class="social-icon"
-                />
-              </a>
-            </div>
-            <div class="social-content">
-              <a href="" class="footer__a">
-                <img
-                  src="./img/home/twitter.png"
-                  alt="Twitter logo"
-                  srcset=""
-                  class="social-icon"
-                />
-              </a>
-            </div>
+          <div class="social-content">
+            <a href="" class="footer__a">
+              <span class="social-span">@Username</span>
+              <img
+                src="./img/home/twitter.png"
+                alt="Twitter logo"
+                srcset=""
+                class="social-icon"
+              />
+            </a>
+          </div>
           </div>
         </div>
       </div>
     </footer>
     <script src="./index.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js"></script>
   </body>
 </html>
