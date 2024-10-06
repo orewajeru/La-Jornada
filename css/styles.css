@@ -165,6 +165,7 @@
 
 .destinos-content {
   padding: 1.4rem;
+  text-align: center;
 }
 
 .destinos__cards-title {
@@ -512,118 +513,4 @@ figure {
   background-repeat: no-repeat;
   background-size: cover;
   height: 50rem;
-}
-
-/* MEDIA QUERIES */
-
-@media (width >= 600px) and (width <= 1200px) {
-  /* HOME PAGE */
-
-  /* Queries OFERTAS */
-  .main__home-ofertas {
-    margin: 0;
-  }
-  .ofertas-cards {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 0;
-  }
-  .card-bg,
-  .card-content-bg {
-    width: 50rem;
-  }
-  /* Queries CATEGORIAS */
-  .categorias__display {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 3rem;
-    place-content: center;
-  }
-  /* Queries DESTINOS */
-  .destinos__cards-display {
-    display: grid;
-    place-content: center;
-  }
-  /* Queries CONDICIONES */
-  .condiciones__display {
-    display: flex;
-    flex-direction: column;
-  }
-  .condiciones__texts {
-    text-align: center;
-  }
-  .condiciones__group-photos {
-    width: 100%;
-  }
-
-  /* Queries OPINIONES */
-  .main__home-opiniones {
-    margin: 12rem 4rem;
-  }
-
-  /* BLOG PAGE */
-  /* Queries Header */
-  .banner.blog-header-banner {
-    height: 60rem;
-  }
-  .intro-texts {
-    left: 12rem;
-    top: 20rem;
-  }
-  .intro-h1 {
-    font-size: 4rem;
-  }
-  .intro-p {
-    width: 60%;
-  }
-
-  /* Queries ARTICLES */
-  .blog-places {
-    margin: 10rem;
-  }
-  /* Queries CARDS */
-  .posts-display {
-    gap: 2rem;
-  }
-
-  /* PAQUETE DE VIAJES PAGE */
-  /* Queries Header */
-  .banner.destinos-header-banner {
-    height: 60rem;
-  }
-  .destinos-intro .destinos-texts {
-    left: 12rem;
-    top: 20rem;
-  }
-  .destinos__h1-title {
-    font-size: 4rem;
-  }
-  .destinos-intro .destinos__p-info {
-    width: 40%;
-  }
-
-  /* Queries DESTINOS */
-  .lugares-display {
-    gap: 10rem;
-  }
-
-  /* Queries PAGO */
-  .pago__display {
-    margin: 4rem;
-  }
-
-  /* Queries OPINIONES */
-  .destinos-rate {
-    margin: 12rem 4rem;
-  }
-
-  .banner.destinos-footer-banner {
-    height: 60rem;
-  }
-
-  /* CONTACTO PAGE */
-  /* Queries FORM */
-  .contacto-section {
-    margin: 15rem 12rem;
-  }
 }

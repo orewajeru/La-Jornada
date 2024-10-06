@@ -263,38 +263,3 @@ footer {
   place-items: center;
   margin: 0;
 }
-@media (width >= 600px) and (width <=1200px) {
-  nav {
-    height: 12rem;
-  }
-
-  .banner {
-    background-position-x: center;
-  }
-
-  .go-up-button {
-    width: 5%;
-  }
-  .footer-info {
-    padding: 2rem;
-    gap: 2rem;
-  }
-  footer {
-    height: 15rem;
-  }
-  .vertical-line {
-    height: 13%;
-  }
-  .footer__a {
-    gap: 0.5rem;
-  }
-  .social-span {
-    font-size: 1.5rem;
-  }
-  .opiniones__avatar {
-    width: 25%;
-  }
-  .opiniones__text {
-    padding: 1.5rem;
-  }
-}
