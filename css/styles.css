@@ -520,6 +520,7 @@ figure {
 /* MEDIA QUERIES */
 
 /* // CELLPHONES // */
+/*  */
 @media (width <= 480px) {
   /*  */
   /*  */
@@ -662,6 +663,12 @@ figure {
     width: 100%;
     height: 100%;
   }
+  .places-p {
+    font-size: 1.6rem;
+  }
+  .places-titles {
+    font-size: 2rem;
+  }
 
   /* Queries POSTS */
   .blog--posts-title {
@@ -700,5 +707,40 @@ figure {
     width: 100%;
     font-weight: 400;
     font-size: 2.2rem;
+  }
+
+  /* Queries DESTINOS */
+  .destinos-lugares {
+    margin: 0;
+  }
+  .lugares-display {
+    display: grid;
+    margin: 5rem;
+    gap: 4rem;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .destinos-lugares .posts-p {
+    height: fit-content;
+    margin: 2rem 0;
+    font-size: 2rem;
+  }
+
+  /* Queries PAGOS */
+  .pago__display {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin: 2rem;
+    gap: 1rem;
+  }
+
+  /* Queries RATES */
+  .destinos-rates {
+    margin: 10rem 0;
+  }
+
+  /* Queries BANNER FOOTER */
+  .destinos-footer-banner {
+    height: 30rem;
+    background-position-x: center;
   }
 }
