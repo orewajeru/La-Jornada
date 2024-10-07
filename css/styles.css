@@ -380,20 +380,25 @@ figure {
 /* SECTION DESTINOS */
 
 .destinos-lugares {
-  margin: 10.5rem;
+  margin: 10.5rem 36rem;
 }
 
 .lugares-display {
   display: flex;
   margin: 6.4rem 10.4rem;
-  gap: 1rem;
+  gap: 5rem;
   justify-content: space-evenly;
   font-size: 2rem;
 }
 
-.posts-p {
+.destinos-lugares .posts-p {
+  width: fit-content;
+  height: 15rem;
   line-height: normal;
-  margin-bottom: 6rem;
+}
+
+.destinos-lugares .posts-button {
+  width: 100%;
 }
 
 /* SECTION PAGOS */
@@ -420,7 +425,7 @@ figure {
 
 /* SECTION RESEÑAS */
 
-.destinos-rate {
+.destinos-rates {
   margin: 6.4rem 20rem 15rem 20rem;
 }
 
@@ -428,7 +433,7 @@ figure {
   background: url(/img/destinos/personas.png);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 80rem;
+  height: 60rem;
 }
 /* - - CONTACTO - - */
 
@@ -646,8 +651,9 @@ figure {
     font-size: 3rem;
   }
   .intro-p {
-    width: 80%;
+    width: 100%;
     font-size: 2.2rem;
+    font-weight: 400;
   }
 
   /* Queries PLACES */
@@ -742,5 +748,46 @@ figure {
   .destinos-footer-banner {
     height: 30rem;
     background-position-x: center;
+  }
+
+  /*  */
+  /*  */
+  /* CONTACTO PAGE */
+  /*  */
+  /* Queries HEADER */
+  .banner.contacto-header-banner {
+    height: 80rem;
+    background-position-x: center;
+  }
+
+  .contacto-intro .intro-texts {
+    top: 42rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .contacto-intro .intro-p {
+    width: 100%;
+  }
+
+  /* Queries FORM */
+  .contacto-section {
+    margin: 10rem 2rem;
+  }
+  .form__p-info {
+    margin: 4rem;
+    font-size: 2rem;
+    font-weight: 400;
+  }
+  .data-display {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .form-button {
+    width: 50%;
+  }
+
+  /* Queries FOOTER */
+  .banner.contacto-footer-banner {
+    height: 30rem;
   }
 }
