@@ -2,7 +2,7 @@
 
 /* SECTION INTRO */
 .home-header-banner {
-  background: url(/img/home/maldivas.png);
+  background: url(./img/home/maldivas.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -35,13 +35,13 @@
 }
 
 .card-bg.first {
-  background: url(/img/home/tokyo.png);
+  background: url(./img/home/tokyo.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .card-bg.second {
-  background: url(/img/home/san-andreas.png);
+  background: url(./img/home/san-andreas.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -139,13 +139,13 @@
 }
 
 .texts-bg.first {
-  background: url(/img/home/tokyo.png);
+  background: url(./img/home/tokyo.png);
   background-size: contain;
   background-repeat: no-repeat;
 }
 
 .texts-bg.second {
-  background: url(/img/home/osaka@2x.png);
+  background: url(./img/home/osaka@2x.png);
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -225,7 +225,7 @@
 
 /* FOOTER BANNER */
 .home-footer-banner {
-  background: url(/img/home/pre-footer-image.png);
+  background: url(./img/home/pre-footer-image.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -233,7 +233,7 @@
 /* - - BLOG - - */
 
 .banner.blog-header-banner {
-  background: url(/img/blog/Banner\ Blog.png);
+  background: url(./img/blog/Banner\ Blog.png);
   background-size: cover;
   height: 80rem;
   background-repeat: no-repeat;
@@ -335,7 +335,7 @@ figure {
 /* SECTION INTRO */
 
 .banner.destinos-header-banner {
-  background: url(/img/destinos/Banner\ Destinos\ Japon.png);
+  background: url(./img/destinos/Banner\ Destinos\ Japon.png);
   background-repeat: no-repeat;
   background-size: cover;
   height: 80rem;
@@ -430,7 +430,7 @@ figure {
 }
 
 .destinos-footer-banner {
-  background: url(/img/destinos/personas.png);
+  background: url(./img/destinos/personas.png);
   background-repeat: no-repeat;
   background-size: cover;
   height: 60rem;
@@ -440,7 +440,7 @@ figure {
 /* SECTION INTRO*/
 
 .banner.contacto-header-banner {
-  background: url(/img/contacto/Banner\ Contacto.png);
+  background: url(./img/contacto/Banner\ Contacto.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -516,7 +516,7 @@ figure {
 }
 
 .banner.contacto-footer-banner {
-  background: url(/img/contacto/Footer.png);
+  background: url(./img/contacto/Footer.png);
   background-repeat: no-repeat;
   background-size: cover;
   height: 50rem;
