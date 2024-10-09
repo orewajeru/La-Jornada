@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="e">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -34,11 +34,13 @@
     </header>
 
     <main>
+      <a class="go-up-button" id="buttonUp" onclick="clickToUp()"
+          ><img src="./img/flecha.png" alt=""
+        />
+       </a>
       <section class="main__home-intro">
-        <a class="go-up-button" id="buttonUp" onclick="clickToUp()"
-          ><img src="./img/flecha.png" alt="" srcset=""
-        /></a>
-      <div class="banner home-header-banner"></div>
+        <div class="banner home-header-banner"></div>
+        <div class="home-container">
           <p class="section__intro-p">
             Somos una agencia apasionada por crear viajes inolvidables. Desde el
             destino hasta la selección de actividades, nos encargamos de todos
@@ -92,7 +94,6 @@
             <img
               src="./img/home/paquetes-nacionales icon.svg"
               alt="Icono de paquetes nacionales"
-              srcset=""
               class="categorias__icon-card"
             />
             <p class="categorias__cards-text">Paquetes Nacionales</p>
@@ -102,7 +103,6 @@
             <img
               src="./img/home/paquetes-internacionales icon.svg"
               alt="Icono de paquetes internacionales"
-              srcset=""
               class="categorias__icon-card"
             />
             <p class="categorias__cards-text">Paquetes Internacionales</p>
@@ -112,7 +112,6 @@
             <img
               src="./img/home/transporte icon.svg"
               alt="Icono de transporte"
-              srcset=""
               class="categorias__icon-card"
             />
             <p class="categorias__cards-text">Transporte</p>
@@ -122,7 +121,6 @@
             <img
               src="./img/home/seguro de viaje icon.svg"
               alt="Icono de seguro de viaje"
-              srcset=""
               class="categorias__icon-card"
             />
             <p class="categorias__cards-text">Seguro de Viaje</p>
@@ -192,7 +190,7 @@
             <div class="condiciones__group-photos">
               <div class="photos-container photo-first">
                 <img
-              src="./img/home/montaje (3).png"
+              src="./img/home/montaje3.png"
               alt="Foto de maleta llena de cosas personales"
               class="condiciones__img"
             />
@@ -200,7 +198,7 @@
 
           <div class="photos-container photo-second">
             <img
-              src="./img/home/montaje (2).png"
+              src="./img/home/montaje2.png"
               alt="Foto de pasaportes"
               class="condiciones__img"
             />
@@ -208,7 +206,7 @@
         </div>
           <div class="photos-container photo-third">
             <img
-              src="./img/home/montaje (1).png"
+              src="./img/home/montaje1.png"
               alt="Foto de dos chicas posando"
               class="condiciones__img"
             />
@@ -223,7 +221,7 @@
 
         <div class="opiniones__display">
           <div class="opiniones__cards">
-            <img src="./img/comillas.png" alt="" srcset="" class="opiniones-icon">
+            <img src="./img/comillas.png" alt="" class="opiniones-icon">
             <p class="opiniones__text">
               La Jornada ha sido una de las mejores agencias de viajes que he
               experimentado. El servicio al cliente fue excepcional, y todo el
@@ -231,9 +229,8 @@
             </p>
             <div class="opiniones-group">
               <img
-                src="./img/home/ellipse-1@2x.png"
+                src="./img/home/avatar-ana.png"
                 alt="Foto de una chica"
-                srcset=""
                 class="opiniones__avatar"
               />
               <div class="opiniones-group-texts">
@@ -241,7 +238,7 @@
                 <img
                   src="./img/home/estrellas.png"
                   alt="Puntuación"
-                  srcset=""
+                
                   class="opiniones__img-rate"
                 />
               </div>
@@ -249,15 +246,15 @@
           </div>
           
           <div class="opiniones__cards">
-            <img src="./img/comillas.png" alt="" srcset="" class="opiniones-icon">
+            <img src="./img/comillas.png" alt="" class="opiniones-icon">
             <p class="opiniones__text">
               Te recomiendo firmemente la agencia de viajes Jornada. Ofrecen un servicio personalizado y de alta calidad que superó mis expectativas en mi último viaje.
             </p>
             <div class="opiniones-group">
               <img
-                src="./img/home/avatar-amari@2x.png"
+                src="./img/home/avatar-amari.png"
                 alt="Foto de un chico"
-                srcset=""
+              
                 class="opiniones__avatar"
               />
               <div class="opiniones-group-texts">
@@ -265,7 +262,7 @@
                 <img
                   src="./img/home/estrellas.png"
                   alt="Puntuación"
-                  srcset=""
+                
                   class="opiniones__img-rate"
                 />
               </div>
@@ -273,15 +270,15 @@
           </div>
 
           <div class="opiniones__cards">
-            <img src="./img/comillas.png" alt="" srcset="" class="opiniones-icon">
+            <img src="./img/comillas.png" alt="" class="opiniones-icon">
             <p class="opiniones__text">
               ¡Mi viaje con La Jornada fue increíble! Te la recomiendo mucho si buscas una experiencia emocionante y personalizada.
             </p>
             <div class="opiniones-group">
               <img
-                src="./img/home/avatar-lauro@2x.png"
+                src="./img/home/avatar-lauro.png"
                 alt="Foto de un chico"
-                srcset=""
+              
                 class="opiniones__avatar"
               />
               <div class="opiniones-group-texts">
@@ -289,14 +286,13 @@
                 <img
                   src="./img/home/estrellas.png"
                   alt="Puntuación"
-                  srcset=""
+                
                   class="opiniones__img-rate"
                 />
               </div>
             </div>
           </div>
 
-         
         </div>
       </section>
 
@@ -327,7 +323,7 @@
               <img
                 src="./img/home/whatsapp.png"
                 alt="Whatsapp logo"
-                srcset=""
+              
                 class="social-icon"
               />
             </a>
@@ -339,7 +335,7 @@
               <img
                 src="./img/home/instagram.png"
                 alt="Instagram logo"
-                srcset=""
+              
                 class="social-icon"
               />
             </a>
@@ -350,7 +346,7 @@
               <img
                 src="./img/home/twitter.png"
                 alt="Twitter logo"
-                srcset=""
+              
                 class="social-icon"
               />
             </a>
