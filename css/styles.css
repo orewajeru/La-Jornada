@@ -330,6 +330,10 @@ figure {
   width: 100%;
 }
 
+.post-content .posts-p {
+  height: 15rem;
+}
+
 /* - - PAQUETE DE VIAJE - - */
 
 /* SECTION INTRO */
