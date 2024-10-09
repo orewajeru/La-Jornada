@@ -2,7 +2,7 @@
 
 /* SECTION INTRO */
 .home-header-banner {
-  background: url(../img/home/maldivas.png);
+  background: url(../img/home/Banner.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -11,7 +11,7 @@
   padding: 11.2rem 36rem;
   font-size: 2.5rem;
   text-align: center;
-  line-height: 152%;
+  line-height: 6rem;
   font-weight: 300;
 }
 
@@ -145,7 +145,7 @@
 }
 
 .texts-bg.second {
-  background: url(../img/home/osaka@2x.png);
+  background: url(../img/home/osaka.png);
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -225,7 +225,7 @@
 
 /* FOOTER BANNER */
 .home-footer-banner {
-  background: url(../img/home/pre-footer-image.png);
+  background: url(../img/home/Footer.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
