@@ -35,13 +35,13 @@
 }
 
 .card-bg.first {
-  background: url(/img/home/tokyo.png);
+  background: url(./img/home/tokyo.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .card-bg.second {
-  background: url(/img/home/san-andreas.png);
+  background: url(../img/home/san-andreas.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
