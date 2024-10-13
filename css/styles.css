@@ -98,7 +98,6 @@
   display: grid;
   gap: 5rem;
   grid-template-columns: repeat(4, 1fr);
-  margin: 6.4rem 36rem;
 }
 
 .categorias__cards img {
@@ -131,7 +130,6 @@
 }
 
 .destinos__cards-display {
-  margin: 6.4rem 45rem;
   display: grid;
   place-items: center;
   gap: 10rem;
@@ -617,6 +615,273 @@ figure {
   .photo-third {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    padding: 2rem;
+  }
+  .photo-third {
+    margin: 0;
+    padding: 0 2rem;
+    height: 100%;
+  }
+
+  /* Queries OPINIONES */
+  .main__home-opiniones {
+    margin: 2rem 0;
+  }
+
+  /* Queries FOOTER-BANNER */
+  .home-footer-banner {
+    height: 30rem;
+  }
+  /*  */
+  /*  */
+  /* BLOG PAGE */
+  /*  */
+  /* Queries INTRO */
+  .banner.blog-header-banner {
+    display: block;
+    height: 80rem;
+    background-position-x: center;
+    margin-bottom: 15rem;
+  }
+  .intro-texts {
+    left: 50%;
+    transform: translateX(-50%);
+    top: 40rem;
+  }
+  .intro-h1 {
+    font-size: 3rem;
+  }
+  .intro-p {
+    width: 100%;
+    font-size: 2.2rem;
+    font-weight: 400;
+  }
+
+  /* Queries PLACES */
+  .blog-places {
+    margin: 2rem 0;
+    padding: 2rem;
+  }
+  .article-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .article__figure-img img {
+    width: 100%;
+    height: 100%;
+  }
+  .places-p {
+    font-size: 1.6rem;
+  }
+  .places-titles {
+    font-size: 2rem;
+  }
+
+  /* Queries POSTS */
+  .blog--posts-title {
+    text-wrap: wrap;
+    white-space: wrap;
+  }
+  .posts-display {
+    margin: 0;
+    padding: 5rem;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+  }
+  .posts-p {
+    width: 100%;
+  }
+
+  /*  */
+  /*  */
+  /* PAQUETES DE VIAJES PAGE */
+  /*  */
+  .banner.destinos-header-banner {
+    height: 80rem;
+    background-position-x: 45%;
+    margin-bottom: 15rem;
+  }
+  .destinos-intro .destinos-texts {
+    left: 50%;
+    transform: translateX(-50%);
+    top: 37rem;
+  }
+  .destinos-intro .destinos__h1-title {
+    font-size: 3rem;
+  }
+  .destinos-intro .destinos__p-info {
+    width: 100%;
+    font-weight: 400;
+    font-size: 2.2rem;
+  }
+
+  /* Queries DESTINOS */
+  .destinos-lugares {
+    margin: 0;
+  }
+  .lugares-display {
+    display: grid;
+    margin: 5rem;
+    gap: 4rem;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .destinos-lugares .posts-p {
+    height: fit-content;
+    margin: 2rem 0;
+    font-size: 2rem;
+  }
+
+  /* Queries PAGOS */
+  .pago__display {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin: 2rem;
+    gap: 1rem;
+  }
+
+  /* Queries RATES */
+  .destinos-rates {
+    margin: 10rem 0;
+  }
+
+  /* Queries BANNER FOOTER */
+  .destinos-footer-banner {
+    height: 30rem;
+    background-position-x: center;
+  }
+
+  /*  */
+  /*  */
+  /* CONTACTO PAGE */
+  /*  */
+  /* Queries HEADER */
+  .banner.contacto-header-banner {
+    height: 80rem;
+    background-position-x: center;
+  }
+
+  .contacto-intro .intro-texts {
+    top: 42rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .contacto-intro .intro-p {
+    width: 100%;
+  }
+
+  /* Queries FORM */
+  .contacto-section {
+    margin: 10rem 2rem;
+  }
+  .form__p-info {
+    margin: 4rem;
+    font-size: 2rem;
+    font-weight: 400;
+  }
+  .data-display {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .form-button {
+    width: 50%;
+  }
+
+  /* Queries FOOTER */
+  .banner.contacto-footer-banner {
+    height: 30rem;
+  }
+}
+
+@media (481px <= width <= 1024px) {
+  /*  */
+  /*  */
+  /* HOME PAGE */
+  /*  */
+  /* Queries INTRO */
+  .main__home-intro .section__intro-p {
+    font-size: 2rem;
+    margin: 5rem 5rem;
+    padding: 0;
+  }
+
+  /* Queries OFERTAS */
+  .main__home-ofertas {
+    margin: auto;
+    width: auto;
+  }
+  .ofertas-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+    gap: 5rem;
+  }
+  .card-bg,
+  .card-content-bg {
+    width: 40rem;
+    height: 30rem;
+  }
+
+  /* Queries CATEGORIAS */
+  .categorias__display {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+    gap: 2rem;
+    row-gap: 5rem;
+    margin: 5rem 0;
+  }
+
+  /* Queries DESTINOS */
+  .main__home-destinos {
+    margin: 2rem auto;
+  }
+  .destinos__cards-display {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+    gap: 3rem;
+    margin: 5rem 0;
+  }
+  .texts-bg {
+    width: 35rem;
+  }
+  .destinos-content {
+    text-align: center;
+    padding: 0rem 2rem;
+    font-size: 1.5rem;
+  }
+  .destinos__cards-button {
+    width: 80%;
+  }
+
+  /* Queries CONDICIONES */
+  .main__home-condiciones {
+    margin: 10rem auto;
+  }
+  .condiciones__display {
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .condiciones__texts-button {
+    display: grid;
+    place-items: center;
+    margin: auto;
+    width: 60%;
+  }
+  .condiciones__texts {
+    padding: 5rem;
+  }
+  .condiciones__texts-title {
+    font-size: 2rem;
+  }
+  .condiciones__texts-p {
+    font-size: 1.6rem;
+  }
+  .condiciones__group-photos,
+  .photo-third {
+    display: grid;
     width: 100%;
     padding: 2rem;
   }
