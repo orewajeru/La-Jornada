@@ -91,10 +91,11 @@
 /* SECTION CATEGORIAS */
 
 .main__home-categorias {
-  margin: 11.2rem 0;
+  margin: 12rem 0;
 }
 
 .categorias__display {
+  margin: 5rem 30rem;
   display: grid;
   gap: 5rem;
   grid-template-columns: repeat(4, 1fr);
@@ -130,6 +131,7 @@
 }
 
 .destinos__cards-display {
+  margin: 5rem 36rem;
   display: grid;
   place-items: center;
   gap: 10rem;
@@ -805,6 +807,10 @@ figure {
     margin: 5rem 5rem;
     padding: 0;
   }
+  .home-header-banner {
+    height: 75rem;
+    background-position-x: center;
+  }
 
   /* Queries OFERTAS */
   .main__home-ofertas {
@@ -882,11 +888,12 @@ figure {
   .condiciones__group-photos,
   .photo-third {
     display: grid;
-    width: 100%;
+    width: auto;
+    margin: auto;
     padding: 2rem;
   }
   .photo-third {
-    margin: 0;
+    margin: auto;
     padding: 0 2rem;
     height: 100%;
   }
@@ -914,7 +921,7 @@ figure {
   .intro-texts {
     left: 50%;
     transform: translateX(-50%);
-    top: 40rem;
+    top: 45rem;
   }
   .intro-h1 {
     font-size: 3rem;
@@ -952,12 +959,18 @@ figure {
   }
   .posts-display {
     margin: 0;
+    width: 100%;
     padding: 5rem;
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 4rem;
   }
-  .posts-p {
+  .blog-posts .posts-p {
+    width: 100%;
+    font-size: 1.6rem;
+    height: 17rem;
+  }
+  .blog-posts .posts-img {
     width: 100%;
   }
 
@@ -973,7 +986,7 @@ figure {
   .destinos-intro .destinos-texts {
     left: 50%;
     transform: translateX(-50%);
-    top: 37rem;
+    top: 44rem;
   }
   .destinos-intro .destinos__h1-title {
     font-size: 3rem;
@@ -992,20 +1005,35 @@ figure {
     display: grid;
     margin: 5rem;
     gap: 4rem;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   }
   .destinos-lugares .posts-p {
-    height: fit-content;
+    height: 12rem;
     margin: 2rem 0;
-    font-size: 2rem;
+    font-size: 1.6rem;
+  }
+  .button.posts-button {
+    width: 100%;
+  }
+  .lugares-display .posts-img {
+    width: 100%;
   }
 
   /* Queries PAGOS */
   .pago__display {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(45rem, 1fr));
     margin: 2rem;
     gap: 1rem;
+  }
+  .destinos-pago .pago__texts-title {
+    font-size: 2.5rem;
+  }
+  .destinos-pago .pago__texts-p {
+    font-size: 1.8rem;
+  }
+  .destinos-pago .pago-img {
+    width: 100%;
   }
 
   /* Queries RATES */
@@ -1030,7 +1058,7 @@ figure {
   }
 
   .contacto-intro .intro-texts {
-    top: 42rem;
+    top: 45rem;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -1055,6 +1083,541 @@ figure {
     width: 50%;
   }
 
+  /* Queries FOOTER */
+  .banner.contacto-footer-banner {
+    height: 30rem;
+  }
+}
+
+@media (1025px <= width <= 1200px) {
+  /*  */
+  /*  */
+  /* HOME PAGE */
+  /*  */
+  /* Queries INTRO */
+  .main__home-intro .section__intro-p {
+    font-size: 2rem;
+    margin: 5rem 5rem;
+    padding: 0;
+  }
+  .home-header-banner {
+    height: 50rem;
+    background-position-x: center;
+  }
+
+  /* Queries OFERTAS */
+  .main__home-ofertas {
+    margin: auto;
+    width: auto;
+  }
+  .ofertas-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(47rem, 1fr));
+    gap: 5rem;
+    margin: 5rem;
+  }
+  .card-bg,
+  .card-content-bg {
+    width: 50rem;
+  }
+
+  /* Queries CATEGORIAS */
+  .categorias__display {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+    gap: 2rem;
+    row-gap: 5rem;
+    margin: 5rem 0;
+  }
+
+  /* Queries DESTINOS */
+  .main__home-destinos {
+    margin: 2rem auto;
+  }
+  .destinos__cards-display {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+    gap: 3rem;
+    margin: 5rem 0;
+  }
+
+  /* Queries CONDICIONES */
+  .main__home-condiciones {
+    margin: 10rem auto;
+  }
+
+  .condiciones__display {
+    margin: 2rem auto;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .condiciones__texts-button {
+    display: grid;
+    place-items: center;
+    margin: auto;
+  }
+  .condiciones__texts {
+    padding: 5rem;
+  }
+  .condiciones__texts-title {
+    font-size: 2rem;
+  }
+  .condiciones__texts-p {
+    font-size: 1.6rem;
+  }
+  .condiciones__group-photos,
+  .photo-third {
+    display: grid;
+    width: auto;
+    margin: auto;
+    padding: 2rem;
+  }
+  .photo-third {
+    margin: auto;
+    padding: 0 2rem;
+    height: fit-content;
+  }
+
+  /* Queries OPINIONES */
+  .main__home-opiniones {
+    margin: 15rem 5rem;
+  }
+  .opiniones__avatar {
+    width: 25%;
+  }
+
+  /*  */
+  /*  */
+  /* BLOG PAGE */
+  /*  */
+  /* Queries INTRO */
+  .banner.blog-header-banner {
+    display: block;
+    height: 60rem;
+    background-position-x: center;
+    margin-bottom: 15rem;
+  }
+  .intro-texts {
+    left: 50%;
+    transform: translateX(-50%);
+    top: 25rem;
+  }
+  .intro-h1 {
+    font-size: 3rem;
+  }
+  .intro-p {
+    width: 100%;
+    font-size: 2.2rem;
+    font-weight: 400;
+  }
+
+  /* Queries PLACES */
+  .blog-places {
+    margin: 2rem 0;
+    padding: 2rem;
+  }
+
+  .article__figure-img img {
+    width: 100%;
+    height: 100%;
+  }
+  .places-p {
+    font-size: 1.6rem;
+  }
+  .places-titles {
+    font-size: 2rem;
+  }
+
+  /* Queries POSTS */
+  .blog--posts-title {
+    text-wrap: wrap;
+    white-space: wrap;
+  }
+  .posts-display {
+    margin: 0;
+    width: 100%;
+    padding: 5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 4rem;
+  }
+  .blog-posts .posts-p {
+    width: 100%;
+    font-size: 1.6rem;
+    height: 17rem;
+  }
+  .blog-posts .posts-img {
+    width: 100%;
+  }
+
+  /*  */
+  /*  */
+  /* PAQUETES DE VIAJES PAGE */
+  /*  */
+  .banner.destinos-header-banner {
+    height: 60rem;
+    background-position-x: 45%;
+    margin-bottom: 15rem;
+  }
+  .destinos-intro .destinos-texts {
+    left: 50%;
+    transform: translateX(-50%);
+    top: 25rem;
+  }
+  .destinos-intro .destinos__h1-title {
+    font-size: 3rem;
+  }
+  .destinos-intro .destinos__p-info {
+    width: 100%;
+    font-weight: 400;
+    font-size: 2.2rem;
+  }
+
+  /* Queries DESTINOS */
+  .destinos-lugares {
+    margin: 15rem;
+  }
+  .lugares-display {
+    display: grid;
+    margin: 5rem;
+    gap: 4rem;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  }
+  .destinos-lugares .posts-p {
+    height: 12rem;
+    margin: 2rem 0;
+    font-size: 1.6rem;
+  }
+  .button.posts-button {
+    width: 100%;
+  }
+  .lugares-display .posts-img {
+    width: 100%;
+  }
+
+  /* Queries PAGOS */
+  .destinos-pago {
+    margin: 5rem;
+  }
+  .pago__display {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(45rem, 1fr));
+    margin: 2rem;
+    gap: 1rem;
+  }
+  .destinos-pago .pago__texts-title {
+    font-size: 2.5rem;
+  }
+  .destinos-pago .pago__texts-p {
+    font-size: 1.8rem;
+  }
+  .destinos-pago .pago-img {
+    width: 100%;
+  }
+
+  /* Queries RATES */
+  .destinos-rates {
+    margin: 5rem;
+  }
+
+  /* Queries BANNER FOOTER */
+  .destinos-footer-banner {
+    height: 30rem;
+    background-position-x: center;
+  }
+
+  /*  */
+  /*  */
+  /* CONTACTO PAGE */
+  /*  */
+  /* Queries HEADER */
+  .banner.contacto-header-banner {
+    height: 60rem;
+    background-position-x: center;
+  }
+
+  .contacto-intro .intro-texts {
+    top: 25rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .contacto-intro .intro-p {
+    width: 100%;
+  }
+
+  /* Queries FORM */
+  .contacto-section {
+    margin: 10rem 2rem;
+  }
+  .form__p-info {
+    margin: 4rem;
+    font-size: 2rem;
+    font-weight: 400;
+  }
+  form {
+    margin: 10rem;
+  }
+  /* Queries FOOTER */
+  .banner.contacto-footer-banner {
+    height: 30rem;
+  }
+}
+
+@media (1201px <= width) {
+  /*  */
+  /*  */
+  /* HOME PAGE */
+  /*  */
+  /* Queries OFERTAS */
+  .main__home-ofertas {
+    margin: auto;
+    width: auto;
+  }
+  .ofertas-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(47rem, 1fr));
+    gap: 5rem;
+    margin: 5rem;
+  }
+  .card-bg,
+  .card-content-bg {
+    width: 50rem;
+  }
+
+  /* Queries CATEGORIAS */
+  .categorias__display {
+    margin: 5rem auto;
+  }
+
+  /* Queries DESTINOS */
+  .main__home-destinos {
+    margin: 2rem auto;
+  }
+  .destinos__cards-display {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+    gap: 3rem;
+    margin: 5rem 0;
+  }
+
+  /* Queries CONDICIONES */
+  .main__home-condiciones {
+    margin: 10rem auto;
+  }
+
+  .condiciones__display {
+    margin: 2rem auto;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .condiciones__texts-button {
+    display: grid;
+    place-items: center;
+    margin: auto;
+  }
+  .condiciones__texts {
+    padding: 5rem;
+  }
+  .condiciones__texts-title {
+    font-size: 2rem;
+  }
+  .condiciones__texts-p {
+    font-size: 1.6rem;
+  }
+  .condiciones__group-photos,
+  .photo-third {
+    display: grid;
+    width: auto;
+    margin: auto;
+    padding: 2rem;
+  }
+  .photo-third {
+    margin: auto;
+    padding: 0 2rem;
+    height: fit-content;
+  }
+
+  /* Queries OPINIONES */
+  .main__home-opiniones {
+    margin: 15rem 5rem;
+  }
+  .opiniones__avatar {
+    width: 25%;
+  }
+
+  /*  */
+  /*  */
+  /* BLOG PAGE */
+  /*  */
+  /* Queries INTRO */
+  .banner.blog-header-banner {
+    display: block;
+    height: 60rem;
+    background-position-x: center;
+    margin-bottom: 15rem;
+  }
+  .intro-texts {
+    left: 50%;
+    transform: translateX(-50%);
+    top: 25rem;
+  }
+  .intro-h1 {
+    font-size: 3rem;
+  }
+  .intro-p {
+    width: 100%;
+    font-size: 2.2rem;
+    font-weight: 400;
+  }
+
+  /* Queries PLACES */
+  .blog-places {
+    margin: 2rem 0;
+    padding: 2rem;
+  }
+
+  .article__figure-img img {
+    width: 100%;
+    height: 100%;
+  }
+  .places-p {
+    font-size: 1.6rem;
+  }
+  .places-titles {
+    font-size: 2rem;
+  }
+
+  /* Queries POSTS */
+  .blog--posts-title {
+    text-wrap: wrap;
+    white-space: wrap;
+  }
+  .posts-display {
+    margin: 0;
+    width: 100%;
+    padding: 5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 4rem;
+  }
+  .blog-posts .posts-p {
+    width: 100%;
+    font-size: 1.6rem;
+    height: 17rem;
+  }
+  .blog-posts .posts-img {
+    width: 100%;
+  }
+
+  /*  */
+  /*  */
+  /* PAQUETES DE VIAJES PAGE */
+  /*  */
+  .banner.destinos-header-banner {
+    height: 60rem;
+    background-position-x: 45%;
+    margin-bottom: 15rem;
+  }
+  .destinos-intro .destinos-texts {
+    left: 50%;
+    transform: translateX(-50%);
+    top: 25rem;
+  }
+  .destinos-intro .destinos__h1-title {
+    font-size: 3rem;
+  }
+  .destinos-intro .destinos__p-info {
+    width: 100%;
+    font-weight: 400;
+    font-size: 2.2rem;
+  }
+
+  /* Queries DESTINOS */
+  .destinos-lugares {
+    margin: 15rem;
+  }
+  .lugares-display {
+    display: grid;
+    margin: 5rem;
+    gap: 4rem;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  }
+  .destinos-lugares .posts-p {
+    height: 12rem;
+    margin: 2rem 0;
+    font-size: 1.6rem;
+  }
+  .button.posts-button {
+    width: 100%;
+  }
+  .lugares-display .posts-img {
+    width: 100%;
+  }
+
+  /* Queries PAGOS */
+  .destinos-pago {
+    margin: 5rem;
+  }
+  .pago__display {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(45rem, 1fr));
+    margin: 2rem;
+    gap: 1rem;
+  }
+  .destinos-pago .pago__texts-title {
+    font-size: 2.5rem;
+  }
+  .destinos-pago .pago__texts-p {
+    font-size: 1.8rem;
+  }
+  .destinos-pago .pago-img {
+    width: 100%;
+  }
+
+  /* Queries RATES */
+  .destinos-rates {
+    margin: 5rem;
+  }
+
+  /* Queries BANNER FOOTER */
+  .destinos-footer-banner {
+    height: 30rem;
+    background-position-x: center;
+  }
+
+  /*  */
+  /*  */
+  /* CONTACTO PAGE */
+  /*  */
+  /* Queries HEADER */
+  .banner.contacto-header-banner {
+    height: 60rem;
+    background-position-x: center;
+  }
+
+  .contacto-intro .intro-texts {
+    top: 25rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .contacto-intro .intro-p {
+    width: 100%;
+  }
+
+  /* Queries FORM */
+  .contacto-section {
+    margin: 10rem 2rem;
+  }
+  .form__p-info {
+    margin: 4rem;
+    font-size: 2rem;
+    font-weight: 400;
+  }
+  form {
+    margin: 10rem;
+  }
   /* Queries FOOTER */
   .banner.contacto-footer-banner {
     height: 30rem;
