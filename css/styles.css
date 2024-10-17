@@ -5,6 +5,7 @@
   background: url(../img/home/Banner.png);
   background-size: cover;
   background-repeat: no-repeat;
+  height: 80rem;
 }
 
 .main__home-intro .section__intro-p {
@@ -447,6 +448,7 @@ figure {
   background: url(../img/contacto/Banner\ Contacto.png);
   background-repeat: no-repeat;
   background-size: cover;
+  height: 80rem;
 }
 .contacto-intro .intro-p {
   width: 70%;
@@ -1364,7 +1366,7 @@ figure {
   }
 }
 
-@media (1201px <= width) {
+@media (1201px <= width <= 1600px) {
   /*  */
   /*  */
   /* HOME PAGE */
@@ -1387,12 +1389,12 @@ figure {
 
   /* Queries CATEGORIAS */
   .categorias__display {
-    margin: 5rem auto;
+    margin: 5rem;
   }
 
   /* Queries DESTINOS */
   .main__home-destinos {
-    margin: 2rem auto;
+    margin: 2rem 10rem;
   }
   .destinos__cards-display {
     display: grid;
@@ -1403,7 +1405,7 @@ figure {
 
   /* Queries CONDICIONES */
   .main__home-condiciones {
-    margin: 10rem auto;
+    margin: 0 10rem;
   }
 
   .condiciones__display {
